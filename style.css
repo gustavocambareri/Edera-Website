@@ -1,0 +1,88 @@
+
+@font-face {
+  font-family: 'titoli';
+  src: url('font/timesbold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'corpo';
+  src: url('font/times.otf') format('opentype');
+}
+
+footer{
+font-family: corpo;
+  text-align: center;
+}
+html, body {
+    margin: 0;
+    padding: 1px;
+  }
+  
+  canvas {
+    display: block;
+    margin: 0;
+    padding: 10;
+    z-index: -1
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .buttons-container {
+    display: flex;
+  align-content:flex-start;
+  justify-content: space-between;
+  }
+  
+  
+  .bottonisinistra, .bottonidestra {
+    z-index: 4;
+    margin-right: 30px;
+    font-size: 4vw;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'corpo';
+    
+  }
+
+.bottonisinistra:hover, .bottonidestra:hover {
+  color: red; /* Set the font color to red on hover */
+}
+
+.classe1 {
+  width: 85%;
+  position: relative;
+  z-index: 1;
+  text-align: left; 
+  font-family: 'corpo';
+}
+
+.classe1.greenStyle {
+  color: green;
+}
+
+h1{
+    font-weight: normal; /* This removes the bold styling */
+    margin-left: 40px;
+    font-size: 3.2vw;
+    /* line-height: 1.1vh; */
+font-family: 'corpo'
+}
+
+p{
+    
+    line-height: 1;
+    font-size: 3vw;
+    font-family: 'corpo'
+}
+
+.hover-effect {
+    padding: 0.0001px; /* Adjust the padding as needed */
+}   
+.hover-effect:hover {
+    background-color: black;
+    color: white;
+    z-index: -1
+  }
