@@ -7,25 +7,58 @@ document.getElementById('button1').addEventListener('click', function() {
     window.location.href = 'index.html';
 });
 
-
-document.addEventListener('DOMContentLoaded', function() {
+//testo che diventa verde
+function testoVerde() {
   var targetElement2 = document.getElementById('targetElement2');
   if (window.location.href.includes('eng.html')) {
       targetElement2.classList.add('greenStyle');
   }
-});
-// document.addEventListener('DOMContentLoaded', function() {
-//   var targetButton = document.getElementById('button1');
-//   if (window.location.href.includes('eng.html')) {
-//       targetButton.classList.add('greenStyle');
-//   }
-// });
-// document.addEventListener('DOMContentLoaded', function() {
-//   var targetElement2 = document.getElementById('targetElement2');
-//   if (window.location.href.includes('eng.html')) {
-//       targetElement2.classList.add('greenStyle');
-//   }
-// });
+};
+testoVerde()
+
+//titoli che diventano verdi
+function titoliVerdi() {
+  var targetTitoli = document.querySelectorAll('#targetTitolo');
+  if (window.location.href.includes('eng.html')) {
+      for (var i = 0; i < targetTitoli.length; i++) {
+          targetTitoli[i].classList.add('greenStyle');
+      }
+  }
+};
+titoliVerdi()
+
+//bottoni che diventano verdi a sinistra,1 e 2
+function bottoniVerdi() {
+  var target1 = document.getElementById('button1');
+  if (window.location.href.includes('eng.html')) {
+      target1.classList.add('greenStyle');
+  }
+};
+bottoniVerdi()
+
+function bottoni2Verdi() {
+  var target2 = document.getElementById('button2');
+  if (window.location.href.includes('eng.html')) {
+      target2.classList.add('greenStyle');
+  }
+};
+bottoni2Verdi()
+
+//bottoni che diventano verdi a sinistra,5 e 6
+function bottoni3Verdi() {
+  var target5 = document.getElementById('button5');
+  if (window.location.href.includes('eng.html')) {
+      target5.classList.add('greenStyle');
+  }
+};
+bottoni3Verdi()
+function bottoni4Verdi() {
+  var target6 = document.getElementById('button6');
+  if (window.location.href.includes('eng.html')) {
+      target6.classList.add('greenStyle');
+  }
+};
+bottoni4Verdi()
 
 document.getElementById('button2').addEventListener('click', function() {
     console.log('Button 2 clicked!');
@@ -44,19 +77,6 @@ document.getElementById('button6').addEventListener('click', function() {
     window.location.href = 'https://linktr.ee/edera.collective?utm_source=linktree_profile_share&ltsid=6bbde1fe-0080-4103-8a03-839a0d53d440';
 });
 
-
-
-  // parte di comunicazione con p5
-
-  // document.addEventListener('DOMContentLoaded', function() {
-  //   let spanHover = document.getElementById('spanhover');
-  
-  //   spanHover.addEventListener('mouseover', function() {
-  //     // Trigger a custom event named "spanHovered"
-  //     const spanHoverEvent = new Event('spanHovered');
-  //     document.dispatchEvent(spanHoverEvent);
-  //   });
-  // });
   
   
 

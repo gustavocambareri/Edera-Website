@@ -12,18 +12,16 @@
 footer{
 font-family: corpo;
   text-align: center;
+  border: 20px;
 }
-html, body {
-    margin: 0;
-    padding: 1px;
-  }
-  
-  canvas {
-    display: block;
-    margin: 0;
-    padding: 10;
-    z-index: -1
-  }
+body, html {
+  margin: 0;
+  height: 100%;
+}
+canvas {
+  display: block;
+  z-index: -3;
+}
 
   .container {
     padding: 20px;
@@ -31,7 +29,7 @@ html, body {
 
   .buttons-container {
     display: flex;
-  align-content:flex-start;
+  /* align-content:flex-start; */
   justify-content: space-between;
   }
   
@@ -39,12 +37,21 @@ html, body {
   .bottonisinistra, .bottonidestra {
     z-index: 4;
     margin-right: 30px;
-    font-size: 4vw;
-    background-color: white;
+    font-size:  3.1vw;
+    background-color: transparent;
     border: none;
     cursor: pointer;
     font-family: 'corpo';
     
+  }
+
+  .bottonisinistra.greenStyle{
+
+    color: green;
+  }
+  .bottonidestra.greenStyle{
+
+    color: green;
   }
 
 .bottonisinistra:hover, .bottonidestra:hover {
@@ -64,11 +71,16 @@ html, body {
 }
 
 h1{
-    font-weight: normal; /* This removes the bold styling */
+    font-weight: normal;
     margin-left: 40px;
     font-size: 3.2vw;
-    /* line-height: 1.1vh; */
 font-family: 'corpo'
+}
+
+h1.greenStyle{
+  background-color: green;
+      color: white;
+
 }
 
 p{
@@ -78,11 +90,52 @@ p{
     font-family: 'corpo'
 }
 
-.hover-effect {
-    padding: 0.0001px; /* Adjust the padding as needed */
+
+
+/* .hover-effect {
+    padding: 0.0001px; 
 }   
 .hover-effect:hover {
     background-color: black;
     color: white;
     z-index: -1
+  } */
+
+  @media (max-width: 600px) {
+h1{
+  font-weight: normal;
+  margin-left: 0px;
+  font-size: 8vw;
+font-family: 'corpo'
+}
+
+
+
+    .classe1 {
+      width: 100%;
+      position: relative;
+      z-index: 1;
+      text-align: left; 
+      font-family: 'corpo';
+    }
+
+    .bottonisinistra, .bottonidestra {
+      z-index: 4;
+      margin-right: -5px;
+      font-size: 5vw;
+      background-color: white;
+      border: none;
+      cursor: pointer;
+      font-family: 'corpo';
+      
+    }
+  
+    p {
+      line-height: 1;
+    font-size: 8vw;
+    font-family: 'corpo'
+    }
+
+    
   }
+  
