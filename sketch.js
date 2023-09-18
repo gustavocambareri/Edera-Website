@@ -10,8 +10,9 @@ function preload(){
 
 function setup() {
   frameRate(60);
-  canvas = createCanvas(windowWidth - 20, 8000);
+  canvas = createCanvas(windowWidth - 20, windowHeight);
   canvas.position(0,0);
+  pixelDensity(2)
 
 }
 
